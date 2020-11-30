@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+    color: black;
+    margin:auto;
+    /* background-image: url("https://www.kipa.co.il/wp-content/uploads/2017/04/102201418660.jpg"); */
+
+}
+table{
+    border: 2px solid black;
+    /* display: inline-block; */
+}
+button{
+    border-left: 5px;
+    border-radius: 20%;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+.read{
+    width: 70px;
+    height: 25px;
+    background-color: green;
+}
+.add-book{
+    width: 150px;
+    height: 25px;
+    background-color:lightseagreen;
+   display: flex;
+   text-align: center;
+}
+.update{
+    width: 70px;
+    height: 25px;
+    background-color: yellow;
+}
+.delete{
+    width: 70px;
+    height: 25px;
+    background-color: red;
+}
+thead{
+    background-color: gray;
+    cursor: pointer;
+}
+td{
+    width: 150px;
+    height: 50px;
+}
+.modal{
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    padding: 10px;
+    /* display:flex;
+    justify-content: flex-end; */
+    position: relative;
+     display: none; 
+}
+.modal.img{
+    margin-top: 15px;
+}
+.close{
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: black;
+    color: white;
+
+}
+input{
+
+    background-color: rgb(238, 235, 238);
+    margin-left: 1px;
+}
+.rate{
+
+    background-color: white;
+    width: 10px;
+    height: 15px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos MVC</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+
+    <h1>Lets Todo</h1>
+    <div class="todo-filter">
+        <h3>Filter</h3>
+        <select onchange="onSetFilter(this.value)">
+            <option value="all">All of them</option>
+            <option value="active">Active</option>
+            <option value="done">Done</option>
+        </select>
+        <h3>Sort</h3>
+        <select onchange="onSetSort(this.value)">
+            <option value=" txt">sort by txt</option>
+            <option value="created">sort by created</option>
+            <option value="importance">sort by importance</option>
+        </select>
+    </div>
+    <ul class="todo-list">
+    </ul>
+    <input type="text" placeholder="What Todo?" name="todoTxt" />
+    <input type="text" placeholder="importance" name="todoImportance" />
+    <button onclick="onAddTodo()">Add</button>
+    <div class="stats">
+        Total todos: 
+        <span class="todo-total">4</span>
+        Active:
+        <span class="todo-active">2</span>
+    </div>
+
+    <div hidden class="parent" onclick="console.log('Parent Click');">
+        <div class="child" onclick="console.log('Child Click');event.stopPropagation()"></div>
+    </div>
+    <script src="js/storage-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

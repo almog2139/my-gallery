@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cars CRUDL</title>
+</head>
+
+<body onload="onInit()">
+
+    <h1>Boouks</h1>
+    <button  onclick="onAddBook()"class="add-book">Add a new book</button>
+    <input type="text" placeholder="name book?" name="bookName" />
+    <input type="text" placeholder="price" name="bookPrice" />
+    <input type="text" placeholder="chose pic: green/hari/honda/twillight?" name="bookPic" />
+    <input type="text" placeholder="authorName" name="authorBook" />
+    <input type="text" placeholder="year?" name="yearBook" />
+ 
+    <table border="1">
+        <thead>
+            <th>Id:</th>
+            <th onclick="onSetSort('name')">Book Name</th>
+            <th>Img</th>
+            <th onclick="onSetSort('price')">Price($)</th>
+            <th>Rate</th>
+            <th colspan="3">Action</th>
+        </thead>
+        <tbody class="book-table"></tbody>
+      </table>
+      <div class="modal">
+          <div class="details"></div>
+          <button  class="close" onclick="onCloseRead(this)">x</button>
+          <button  onclick="onChangeRate('+')"class="up">+</button>
+          <span class="rate">0</span>
+          <button onclick="onChangeRate('-')" class="down">-</button>
+      </div>
+<button onclick="onChangePage(-1)">◀</button>
+<button onclick="onChangePage(1)">▶</button>
+
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+
+</body>
+
+</html>

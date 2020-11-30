@@ -1,0 +1,116 @@
+body{
+    text-align: center;
+    background-color: rgb(72, 73, 73);
+     
+}
+table {
+    border-radius: 7px;
+    margin:auto;
+     margin-top: 30px; 
+    cursor: pointer;
+    
+}
+.board{
+    /* box-shadow: 30 19 21px lightblue */
+    box-shadow: 4px -4px 5px rgb(145, 164, 170);
+}
+.cell:hover {
+    background: linear-gradient(to top,#eceff0,rgb(215, 230, 236),rgb(72, 73, 73)); 
+    /* background-color: grey; */
+}
+.cell.mine{
+    background:red;
+}
+.cell{
+    width: 70px;
+    height: 70px;
+}
+h1{
+   color: white;
+   text-shadow: 5px 5px gray;
+     /* background-color: lightblue;  */
+     /* box-shadow: 30 19 21px rgba(0, 0, 0, 0.5); */
+   
+}
+h2{
+    color: white;
+    display: inline-block;
+    margin-left: 50px;
+}
+h3{
+    color: white;
+    display:inline-block;
+}
+h4{
+    display:inline-block;
+}
+button{
+    margin-left: 15px;
+    margin-top: auto;
+   
+}
+button.smile{
+    border-radius: 50%;
+    background-color: rgb(72, 73, 73);
+}
+
+.level button{
+    height: 25px;
+    width: 80px;
+    background-color:red;
+    border:3px dashed black;
+    padding: 3px;
+    color:black; 
+    /* margin-top: 5px; */
+    margin-left: 20px;
+    cursor: pointer;
+}
+.level button:hover{
+    height: 40px;
+    width: 90px;
+    font-size: medium;
+    background-color:grey;
+    border-radius: 40%;
+}
+/* .deatils{
+    
+    background-color: rgb(14, 54, 70);
+} */
+button.hins {
+    background-color: rgb(14, 54, 70);
+    cursor: pointer;
+}
+.safe-click{
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    color: white;
+  
+}
+
+.undo{
+    width: 80px;
+    height: 50px;
+    background-color:rgb(223, 23, 23);
+    color: white;
+}
+.board td {
+    width: 35px;
+    height: 35px;
+    border:2px rgb(41, 40, 40) solid;
+    background-color:rgb(146, 194, 223);
+    border-spacing: 10px;
+    text-align: center;
+    transition: .3s;
+}
+.result{
+ margin:auto;
+ display: inline-block;
+}
+.cell.marked{
+    background-color:whitesmoke
+}
+.put-mine{
+    background-color: lightblue;
+    border:5px white solid;
+}

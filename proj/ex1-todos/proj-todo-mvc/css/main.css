@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+input[name=todoTxt] {
+    border:0;
+    background-color: lightseagreen;
+    padding: 5px 10px;
+}
+
+li button {
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+li button:hover {
+   background-color: cyan;
+}
+
+.todo-filter {
+    background-color:lightskyblue;
+    padding: 10px;
+}
+.stats {
+    background-color:lightskyblue;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.stats span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parent {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+}
+.child {
+    background-color: chocolate;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}

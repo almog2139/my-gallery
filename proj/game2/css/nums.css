@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(82, 82, 80);
+    text-align: center;
+    
+}
+h1{
+    color: white;
+}
+h3{
+    text-decoration: underline;
+    color: white;
+}
+td{
+    border-radius: 10%;
+    margin: auto;
+    font-size: medium;
+
+}
+table{
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #FFF933, #F6F6F6) no-repeat center / cover fixed;
+  margin:auto;
+  /* display: none; */
+} 
+
+td:hover{
+    background-color: rgb(82, 82, 80)
+}
+.click-cell{
+    background-color:grey;
+    color: blue;
+}
+.timer{
+    /* float: left; */
+    height: 150px;
+    width: 150px;
+    background-color:lightcoral;
+    border: 5px black dashed ;
+    border-radius: 50%;
+    display: none;
+    line-height:100px ;
+    vertical-align: middle;
+
+  
+}
+
+.num{
+    
+    height: 100px;
+    width: 100px;
+    background-color:lightcoral;
+    display:none;
+    /* float: right;  */
+    text-align: center;
+}
+.level{
+    height: 70px;
+    width: 600px;
+    background-color:lightblue;
+    margin: auto;
+}

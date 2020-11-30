@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nums.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nums Game</h1>
+    <!-- <button onclick="play(this)">play</button> -->
+    <button onclick="play()">play</button>
+    <button onclick="restaetGame()">Restart</button>
+    <div class="level">
+        <h3>chose your level:</h3>
+        <input type="radio" onclick="eazy()">Eazy(16)
+        <input type="radio" onclick="hard()">Hard(25)
+        <input type="radio" onclick="expert()">Extreme!(36)
+
+
+
+
+    </div>
+    <div class="timer">
+        <h4>Game Time:</h4>
+        <time></time>
+    </div>
+    <div class="num">
+        <h4>Next Number:</h4>
+    </div>
+
+    <table border="3" cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+
+
+    </div>
+    <script src="js/nums.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demos</title>
+    <style>
+        pre {
+            background-color: lightgray;
+            padding: 3px;
+        }
+
+        .container {
+            background-color: lightpink;
+            padding: 10px;
+            min-height: 50vh;
+            margin: 10px auto;
+        }
+
+        .demo-pre {
+            background-color: lightsalmon;
+        }
+
+        header nav {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demos</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact Us</a> |
+        </nav>
+    </header>
+    <section class="container demo-pre">
+        <textarea oninput="document.querySelector('pre').innerText=this.value"></textarea>
+        <pre>
+            Dear Lili,
+            I wanted to say hi, 
+    
+                        Congrats,
+                           Muki
+        </pre>
+
+        <pre>
+        for x = 10 to 1 {
+             print(x);
+        }
+        </pre>
+
+    </section>
+    <a name="services"></a>
+    <section class="container">
+        <h2>Our Service</h2>
+    </section>
+    <a name="contact"></a>
+    <section class="container">
+        <h2>Contact Us</h2>
+    </section>
+
+    <footer>
+        coffeerights 2020
+        <nav>
+            <a href="http://www.gmail.com/" target="_blank">
+                Open Gmail (opens a new tab)
+            </a> |
+            <a
+                href="https://besttv232-ynet-images1-prod.cdn.it.best-tv.com/picserver5/crop_images/2020/11/26/HJlQc1p5w/HJlQc1p5w_0_83_575_311_0_x-large.jpg">
+                Rain is Here
+            </a>
+            |
+            <a href="#">Back to Top</a>
+            |
+            <button onclick="openWin()">Open Win</button>
+            <button onclick="openWin()">Open Facebook</button>
+            <button onclick="history.go(-1)">Go Back</button>
+        </nav>
+
+    </footer>
+
+    <script>
+
+        function openWin() {
+            var popup = window.open('http://facebook.com', '', 'width=100,height=80')
+            // var popup = window.open('http://facebook.com', '', '')
+            popup.focus()
+
+        }
+
+        function myMax(a, b) {
+            var max = -Infinity;
+            // console.log(arguments);
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) max = arguments[i];
+            } 
+            return max;
+        }
+        console.log('Expecting: -Infinity', myMax());
+        console.log('Expecting: 0', myMax(0, 0));
+        console.log('Expecting: 11', myMax(9, 11, 7, 1));
+    </script>
+</body>
+
+</html>
